@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  color: aliceblue;
+}
+
+h1{
+  color: whitesmoke;
+  border-bottom: 7px dashed aliceblue;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+h2{
+  font-size: 30px;
+  /* color: rgb(89, 255, 89); */
+}
+
+p{
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+}
+
+body {
+  background-color: #171717;
+  margin: 0 5%;
+}
+
+.todo-main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding: 5% 10%;
+  background-color: #212121;
+  min-height: 100vh;
+  margin: 0 5%;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-input {
+  width: 60%;
+  padding: 15px;
+  font-size: 24px;
+  color: aliceblue;
+  background-color: #151515;
+  border: none;
+  border-bottom: 2px solid aliceblue;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+.add-todo {
+  padding: 15px;
+  font-size: 20px;
+  background-color: #191919;
+  border: 2px solid aliceblue;
+  border-radius: 10px;
+}
+
+.add-todo:hover {
+  transition: 300ms;
+  border: 2px solid green;
+  background-color: #111111;
+}
+
+.add-todo:disabled {
+  border: 2px solid red;
+}
+
+@media only screen and (max-width: 600px) {
+  .todo-main {
+    padding: 10% 5%;
+  }
+}
+
+.todos-map{
+  margin-top: 5px;
+  display: flex;
+  /* justify-content: center; */
+  gap: 15px;
+  align-items: center;
+}
+
+svg{
+  transition: 300ms;
+}
+
+svg:hover{
+  stroke: red;
+}
